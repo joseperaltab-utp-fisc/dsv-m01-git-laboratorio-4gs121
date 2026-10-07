@@ -1,4 +1,4 @@
-<!-- file: site/alumnos/apellidos-nombre/about-apellidos-nombre.html -->
+<!-- file: site/alumnos/barragan-luis/about-barragan-luis.html -->
 <!--
   PLANTILLA DE PERFIL — HTML
   ──────────────────────────────────────────────────────────────
@@ -24,10 +24,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Nombre Apellidos — Perfil</title>
+    <title>Luis Barragán — Perfil</title>
 
     <!-- CSS específico de esta página -->
-    <link rel="stylesheet" href="./assets/css/about-apellidos-nombre.css" />
+    <link rel="stylesheet" href="./assets/css/about-barragan-luis.css" />
 
     <!-- Descripción breve (práctica de metadatos/SEO) -->
     <meta
@@ -51,8 +51,8 @@
           </div>
 
           <!-- EDITA: nombre y tagline -->
-          <h1 class="nombre">Nombre Apellidos</h1>
-          <p class="tagline">Título profesional o especialización</p>
+          <h1 class="nombre">Luis Barragán</h1>
+          <p class="tagline">Estudiante de Licenciatura en Desarrollo y Gestión de Software</p>
         </div>
 
         <!-- Logos institucionales (no cambiar rutas) -->
@@ -74,15 +74,15 @@
       <aside class="sidebar">
         <figure class="perfil">
           <img
-            src="./assets/img/foto-apellidos-nombre-480.webp"
+            src="./assets/img/foto-barragan-luis-480.webp"
             srcset="
-              ./assets/img/foto-apellidos-nombre-160.webp 160w,
-              ./assets/img/foto-apellidos-nombre-320.webp 320w,
-              ./assets/img/foto-apellidos-nombre-480.webp 480w,
-              ./assets/img/foto-apellidos-nombre-640.webp 640w
+              ./assets/img/foto-barragan-luis-160.webp 160w,
+              ./assets/img/foto-barragan-luis-320.webp 320w,
+              ./assets/img/foto-barragan-luis-480.webp 480w,
+              ./assets/img/foto-barragan-luis-640.webp 640w
             "
             sizes="(max-width: 700px) 128px, 160px"
-            alt="Nombre Apellidos, estudiante de LDGS UTP FISC Veraguas"
+            alt="Luis Barragán, estudiante de LDGS UTP FISC Veraguas"
             width="160"
             height="160"
             loading="lazy"
@@ -97,16 +97,16 @@
           <h2>Contacto</h2>
           <ul class="lista-contacto">
             <li>
-              <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+              <a href="mailto:luis.barragan@utp.ac.pa">luis.barragan@utp.ac.pa</a>
             </li>
             <li>
-              <a target="_blank" rel="noopener" href="{{LINKEDIN}}">LinkedIn</a>
+              <a target="_blank" rel="noopener" href="https://linkedin.com">LinkedIn</a>
             </li>
             <li>
-              <a target="_blank" rel="noopener" href="{{GITHUB}}">GitHub</a>
+              <a target="_blank" rel="noopener" href="https://github.com/Luis-G-Barragan">GitHub</a>
             </li>
             <li>
-              <a target="_blank" rel="noopener" href="{{PORTAFOLIO}}">Portafolio</a>
+              <a target="_blank" rel="noopener" href="https://github.com/Luis-G-Barragan">Portafolio</a>
             </li>
           </ul>
         </section>
@@ -118,36 +118,36 @@
           <h3>Lenguajes</h3>
           <div class="chips">
             <span class="chip">Java</span>
+            <span class="chip">C++</span>
             <span class="chip">JavaScript</span>
-            <span class="chip">Python</span>
             <span class="chip">SQL</span>
           </div>
 
           <h3>Frameworks & Librerías</h3>
           <div class="chips">
-            <span class="chip">Spring Boot</span>
-            <span class="chip">React</span>
+            <span class="chip">HikariCP</span>
+            <span class="chip">Swing</span>
             <span class="chip">Node.js</span>
           </div>
 
           <h3>Bases de datos</h3>
           <div class="chips">
             <span class="chip">MySQL</span>
-            <span class="chip">PostgreSQL</span>
+            <span class="chip">HeidiSQL</span>
           </div>
 
           <h3>Herramientas</h3>
           <div class="chips">
             <span class="chip">Git</span>
-            <span class="chip">Docker</span>
-            <span class="chip">Postman</span>
-            <span class="chip">Figma</span>
+            <span class="chip">VS Code</span>
+            <span class="chip">NetBeans</span>
+            <span class="chip">Gradle</span>
           </div>
 
           <h3>Metodologías</h3>
           <div class="chips">
+            <span class="chip">DSDM</span>
             <span class="chip">Scrum</span>
-            <span class="chip">Kanban</span>
           </div>
         </section>
       </aside>
@@ -156,7 +156,7 @@
       <main class="contenido">
         <section class="resumen card">
           <h2>Acerca de mí</h2>
-          <p>{{RESUMEN_BREVE_ELEVATOR_PITCH}}</p>
+          <p>Estudiante de Licenciatura en Desarrollo y Gestión de Software en la UTP. Enfocado en la arquitectura de software, estructuras de datos en Java/C++ y administración de bases de datos relacionales en MySQL.</p>
         </section>
 
         <!-- Duplica <article.proyecto> por cada proyecto -->
@@ -165,15 +165,15 @@
           <div class="proyectos-flex">
             <article class="proyecto">
               <header class="proyecto-head">
-                <h3>{{NOMBRE_PROYECTO}}</h3>
+                <h3>Sistema de Gestión Logística en MySQL</h3>
                 <div class="proyecto-links">
-                  <a target="_blank" rel="noopener" href="{{URL_GITHUB}}">Código</a>
-                  <a target="_blank" rel="noopener" href="{{URL_DEMO}}">Demo</a>
+                  <a target="_blank" rel="noopener" href="https://github.com/Luis-G-Barragan">Código</a>
+      
                 </div>
               </header>
-              <p>{{DESCRIPCION_PROYECTO}}</p>
-              <p class="rol"><strong>Rol:</strong> {{ROL}}</p>
-              <p class="tech"><strong>Tecnologías:</strong> {{TECNOLOGIAS}}</p>
+              <p>Diseño e implementación de esquemas relacionales, procedimientos almacenados, disparadores (triggers) y cursores para la automatización de procesos logísticos.</p>
+              <p class="rol"><strong>Rol:</strong> Desarrollador de Base de Datos</p>
+              <p class="tech"><strong>Tecnologías:</strong> MySQL, HeidiSQL</p>
             </article>
           </div>
         </section>
@@ -183,9 +183,9 @@
           <ul class="timeline">
             <li>
               <div class="item">
-                <h3>{{CARGO}} — {{ORGANIZACION}}</h3>
-                <span class="meta">{{FECHA}}</span>
-                <p>{{RESPONSABILIDADES_LOGROS}}</p>
+                <h3>Proyectos de Desarrollo de Software — UTP</h3>
+                <span class="meta">2026</span>
+                <p>Análisis de requisitos de software, diseño de arquitectura de información e implementación de evaluaciones de usabilidad ISO 9241-110.</p>
               </div>
             </li>
           </ul>
@@ -196,7 +196,7 @@
           <ul class="listado-simple">
             <li>
               <strong>Licenciatura en Desarrollo y Gestión de Software</strong>
-              — UTP, Centro Regional de Veraguas ({{ANIO_INICIO}}–{{ANIO_FIN}})
+              — UTP, Centro Regional de Veraguas (2024–2028)
             </li>
           </ul>
         </section>
@@ -204,15 +204,15 @@
         <section class="certificaciones card">
           <h2>Certificaciones y Cursos</h2>
           <ul class="listado-simple">
-            <li>{{CERTIFICACION_1}}</li>
-            <li>{{CURSO_1}}</li>
+            <li>Administración de Bases de Datos Relacionales (MySQL)</li>
+            <li>Evaluación de Usabilidad e Interfaces ISO 9241-110</li>
           </ul>
         </section>
 
         <section class="extra card">
           <h2>Logros · Artículos · Intereses</h2>
           <ul class="listado-simple">
-            <li>{{LOGRO_O_ARTICULO}}</li>
+            <li>Ingeniería de Requisitos y Metodologías Ágiles (DSDM)</li>
           </ul>
         </section>
       </main>
