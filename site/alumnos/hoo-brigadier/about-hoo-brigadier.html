@@ -1,0 +1,219 @@
+<!-- file: site/alumnos/hoo-brigadier/about-hoo-brigadier.html -->
+<!--
+  PLANTILLA DE PERFIL — HTML
+  ──────────────────────────────────────────────────────────────
+  ESTA ES LA PLANTILLA. No la edites: copia la carpeta completa
+  site/alumnos/apellidos-nombre/ y renómbrala con tus datos.
+
+  Qué editar en tu copia:
+    • Este comentario de la primera línea (la ruta debe ser la tuya).
+    • El <title> y el <link> a tu hoja de estilos.
+    • Nombre, tagline y todos los marcadores con la forma {{TEXTO}}.
+    • Las cuatro rutas de la fotografía (src y srcset).
+  Qué NO cambiar:
+    • Estructura (header / aside / main / footer).
+    • Rutas a los logos institucionales (../../assets/img/).
+
+  Nombres de archivo de tu copia, si te llamas Juan Pérez:
+    about-perez-juan.html
+    assets/css/about-perez-juan.css
+    assets/img/foto-perez-juan-{160,320,480,640}.webp
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Brigadier Hoo — Perfil</title>
+
+    <!-- CSS específico de esta página -->
+    <link rel="stylesheet" href="./assets/css/about-hoo-brigadier.css" />
+
+    <!-- Descripción breve (práctica de metadatos/SEO) -->
+    <meta
+      name="description"
+      content="Perfil de estudiante — Licenciatura en Desarrollo y Gestión de Software (UTP FISC Veraguas)"
+    />
+  </head>
+  <body>
+    <!-- Contenedor principal (layout en Grid definido en el CSS) -->
+    <div class="page-grid">
+      <header class="header">
+        <div class="titulos">
+          <!-- Navegación mínima (breadcrumb). Puedes añadir más tabs si el profe lo pide -->
+          <div class="top-actions">
+            <nav class="tabs-left" aria-label="Navegación">
+              <a href="../../index.html" class="tab-link is-active">
+                <span class="ico" aria-hidden="true">&#8962;</span>
+                <span class="label">Inicio</span>
+              </a>
+            </nav>
+          </div>
+
+          <!-- EDITA: nombre y tagline -->
+          <h1 class="nombre">Brigadier Hoo</h1>
+          <p class="tagline">Estudiante de Licenciatura en Desarrollo y Gestión de Software</p>
+        </div>
+
+        <!-- Logos institucionales (no cambiar rutas) -->
+        <div class="logos">
+          <img
+            class="logo"
+            src="../../assets/img/logo-utp.svg"
+            alt="Logo UTP"
+          />
+          <img
+            class="logo"
+            src="../../assets/img/logo-fisc.svg"
+            alt="Logo FISC"
+          />
+        </div>
+      </header>
+
+      <!-- Columna izquierda (foto + contacto + habilidades) -->
+      <aside class="sidebar">
+        <figure class="perfil">
+          <img
+            src="./assets/img/foto-hoo-brigadier-480.webp"
+            srcset="
+              ./assets/img/foto-hoo-brigadier-160.webp 160w,
+              ./assets/img/foto-hoo-brigadier-320.webp 320w,
+              ./assets/img/foto-hoo-brigadier-480.webp 480w,
+              ./assets/img/foto-hoo-brigadier-640.webp 640w
+            "
+            sizes="(max-width: 700px) 128px, 160px"
+            alt="Brigadier Hoo, estudiante de LDGS UTP FISC Veraguas"
+            width="160"
+            height="160"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>
+            Licenciatura en Desarrollo y Gestión de Software
+          </figcaption>
+        </figure>
+
+        <section class="contacto card">
+          <h2>Contacto</h2>
+          <ul class="lista-contacto">
+            <li>
+              <a href="mailto:brigadier.hoo@utp.ac.pa"> brigadier.hoo@utp.ac.pa</a>
+            </li>
+            <li>
+              <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/brigadier-hoo-056620442/">LinkedIn</a>
+            </li>
+            <li>
+              <a target="_blank" rel="noopener" href="https://github.com/BrigadierHoo">GitHub</a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Añade o quita chips según tus tecnologías reales -->
+        <section class="skills card">
+          <h2>Habilidades</h2>
+
+          <h3>Lenguajes</h3>
+          <div class="chips">
+            <span class="chip">Java</span>
+            <span class="chip">C++</span>
+            <span class="chip">C#</span>
+            <span class="chip">HTML</span>
+          </div>
+
+          <h3>Bases de datos</h3>
+          <div class="chips">
+            <span class="chip">SQL</span>
+            <span class="chip">MariaDB</span>
+          </div>
+
+          <h3>Herramientas</h3>
+          <div class="chips">
+            <span class="chip">Git</span>
+            <span class="chip">Apache NetBeans</span>
+            <span class="chip">DBeaver</span>
+            <span class="chip">Visual Studio Code</span>
+          </div>
+        </section>
+      </aside>
+
+      <!-- Columna derecha (contenido principal) -->
+      <main class="contenido">
+        <section class="resumen card">
+          <h2>Acerca de mí</h2>
+            <p>Soy estudiante de la Licenciatura en Desarrollo y Gestión de Software en la UTP, Centro Regional de Veraguas. 
+              Soy una persona curiosa, me gusta programar y resolver problemas aplicando la lógica, y he desarrollado proyectos 
+              en Java, C++ y C#, además de trabajar con bases de datos en MariaDB. Busco seguir formándome para ser un programador 
+              versátil, con énfasis en programación y diseño de interfaces.</p>
+
+        </section>
+
+        <!-- Duplica <article.proyecto> por cada proyecto -->
+        <section class="proyectos card">
+          <h2>Proyectos destacados</h2>
+          <div class="proyectos-flex">
+            <article class="proyecto">
+              <header class="proyecto-head">
+                <h3>Sistema de gestión de almacenamiento y pedidos</h3>
+              </header>
+              <p>Sistema en Java para el almacenamiento, gestión, control y pedidos de un inventario, 
+                 conectado a una base de datos MariaDB administrada con phpMyAdmin. Desarrollado como 
+                 proyecto de examen en un equipo de 4 personas.</p>
+              <p class="rol"><strong>Rol:</strong> Diseño de la interfaz, parte de la lógica del sistema y conexión con la base de datos</p>
+              <p class="tech"><strong>Tecnologías:</strong> Java, Apache NetBeans, MariaDB, phpMyAdmin</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="experiencia card">
+          <h2>Experiencia</h2>
+          <ul class="timeline">
+            <li>
+              <div class="item">
+                <h3>Practicante de soporte técnico — Universidad Latina</h3>
+                <span class="meta">	Tercer trimestre 2024</span>
+                <p>	Atención de llamadas y asistencia a estudiantes con problemas en la plataforma de la universidad, 
+                   incluyendo consultas sobre pagos y transacciones (aproximadamente de 8 a 15 estudiantes por jornada). 
+                    Traslado y preparación de equipo en salones y resolución de incidencias técnicas (de 1 a 3 por jornada).</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="educacion card">
+          <h2>Educación</h2>
+          <ul class="listado-simple">
+            <li>
+              <strong>Licenciatura en Desarrollo y Gestión de Software</strong>
+              — UTP, Centro Regional de Veraguas (2025–2029, en curso)
+            </li>
+          </ul>
+        </section>
+
+        <section class="certificaciones card">
+          <h2>Certificaciones y Cursos</h2>
+          <ul class="listado-simple">
+            <li>Curso de Iniciación al Desarrollo con IA (certificado de asistencia, 4 horas) — MoureDev y BIG School, octubre 2026</li>
+            <li>Java Certification Course (certificado de finalización) — Programming Hub, septiembre 2025</li>
+          </ul>
+        </section>
+
+        <section class="extra card">
+          <h2>Logros · Artículos · Intereses</h2>
+          <ul class="listado-simple">
+            <li>Interés en la programación y en resolver problemas aplicando la lógica.</li>
+            <li>Interés en metodologías ágiles (Scrum, Kanban).</li>
+            <li>Objetivo profesional: convertirme en un programador versátil, con énfasis en programación y también en diseño de interfaces.</li>
+            <li>En formación continua: completar cursos ligados a mi carrera para acceder a un empleo en desarrollo de software.</li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <small>
+          © 2026 Universidad Tecnológica de Panamá · Centro Regional de Veraguas
+          · Lic. en Desarrollo y Gestión de Software
+        </small>
+      </footer>
+    </div>
+  </body>
+</html>
