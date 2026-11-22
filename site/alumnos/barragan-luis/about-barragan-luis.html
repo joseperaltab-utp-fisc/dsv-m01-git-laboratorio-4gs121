@@ -1,0 +1,222 @@
+<!-- file: site/alumnos/barragan-luis/about-barragan-luis.html -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Luis Gerardo Barragán Vásquez — Perfil</title>
+
+    <!-- CSS específico de esta página -->
+    <link rel="stylesheet" href="./assets/css/about-barragan-luis.css" />
+
+    <!-- Descripción breve (práctica de metadatos/SEO) -->
+    <meta
+      name="description"
+      content="Perfil de estudiante — Licenciatura en Desarrollo y Gestión de Software (UTP FISC Veraguas)"
+    />
+  </head>
+  <body>
+    <!-- Contenedor principal (layout en Grid definido en el CSS) -->
+    <div class="page-grid">
+      <header class="header">
+        <div class="titulos">
+          <!-- Navegación mínima (breadcrumb) -->
+          <div class="top-actions">
+            <nav class="tabs-left" aria-label="Navegación">
+              <a href="../../index.html" class="tab-link is-active">
+                <span class="ico" aria-hidden="true">&#8962;</span>
+                <span class="label">Inicio</span>
+              </a>
+            </nav>
+          </div>
+
+          <h1 class="nombre">Luis Gerardo Barragán Vásquez</h1>
+          <p class="tagline">Estudiante de Licenciatura en Desarrollo y Gestión de Software</p>
+        </div>
+
+        <!-- Logos institucionales (no cambiar rutas) -->
+        <div class="logos">
+          <img
+            class="logo"
+            src="../../assets/img/logo-utp.svg"
+            alt="Logo UTP"
+          />
+          <img
+            class="logo"
+            src="../../assets/img/logo-fisc.svg"
+            alt="Logo FISC"
+          />
+        </div>
+      </header>
+
+      <!-- Columna izquierda (foto + contacto + habilidades) -->
+      <aside class="sidebar">
+        <figure class="perfil">
+          <img
+            src="./assets/img/foto-barragan-luis-480.webp"
+            srcset="
+              ./assets/img/foto-barragan-luis-160.webp 160w,
+              ./assets/img/foto-barragan-luis-320.webp 320w,
+              ./assets/img/foto-barragan-luis-480.webp 480w,
+              ./assets/img/foto-barragan-luis-640.webp 640w
+            "
+            sizes="(max-width: 700px) 128px, 160px"
+            alt="Luis Gerardo Barragán Vásquez, estudiante de LDGS UTP FISC Veraguas"
+            width="160"
+            height="160"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>
+            Licenciatura en Desarrollo y Gestión de Software
+          </figcaption>
+        </figure>
+
+        <section class="contacto card">
+          <h2>Contacto</h2>
+          <ul class="lista-contacto">
+            <li>
+              <a href="mailto:luis.barragan1@utp.ac.pa">luis.barragan1@utp.ac.pa</a>
+            </li>
+            <li>
+              <a target="_blank" rel="noopener" href="https://github.com/Luis-G-Barragan">GitHub</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="skills card">
+          <h2>Habilidades</h2>
+
+          <h3>Lenguajes</h3>
+          <div class="chips">
+            <span class="chip">Java</span>
+            <span class="chip">C#</span>
+            <span class="chip">C++</span>
+            <span class="chip">SQL</span>
+            <span class="chip">HTML5</span>
+            <span class="chip">CSS3</span>
+          </div>
+
+          <h3>Frameworks & Tecnologías</h3>
+          <div class="chips">
+            <span class="chip">Java Swing</span>
+            <span class="chip">.NET Windows Forms</span>
+            <span class="chip">HikariCP</span>
+          </div>
+
+          <h3>Bases de datos</h3>
+          <div class="chips">
+            <span class="chip">MariaDB</span>
+            <span class="chip">MySQL</span>
+          </div>
+
+          <h3>Herramientas</h3>
+          <div class="chips">
+            <span class="chip">Git</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">VS Code</span>
+            <span class="chip">Apache NetBeans</span>
+            <span class="chip">Visual Studio</span>
+            <span class="chip">HeidiSQL</span>
+          </div>
+
+          <h3>Metodologías</h3>
+          <div class="chips">
+            <span class="chip">Control de Versiones</span>
+            <span class="chip">ISO 9241-11</span>
+          </div>
+        </section>
+      </aside>
+
+      <!-- Columna derecha (contenido principal) -->
+      <main class="contenido">
+        <section class="resumen card">
+          <h2>Acerca de mí</h2>
+          <p>
+            Estudiante de la Licenciatura en Desarrollo y Gestión de Software en la Universidad Tecnológica de Panamá (Centro Regional de Veraguas), grupo 4GS121. Enfocado en el desarrollo de aplicaciones de escritorio, diseño de bases de datos relacionales y desarrollo web semántico bajo flujos colaborativos con Git y GitHub.
+          </p>
+        </section>
+
+        <section class="proyectos card">
+          <h2>Proyectos destacados</h2>
+          <div class="proyectos-flex">
+            <article class="proyecto">
+              <header class="proyecto-head">
+                <h3>Sistema de Gestión con MariaDB (pf_cpel_2026)</h3>
+                <div class="proyecto-links">
+                  <a target="_blank" rel="noopener" href="https://github.com/Luis-G-Barragan">Código</a>
+                </div>
+              </header>
+              <p>
+                Aplicación de escritorio en Java conectada a MariaDB mediante pool de conexiones HikariCP, integrando procedimientos almacenados, vistas, funciones y triggers de validación.
+              </p>
+              <p class="rol"><strong>Rol:</strong> Desarrollador Backend y Base de Datos</p>
+              <p class="tech"><strong>Tecnologías:</strong> Java, MariaDB, HikariCP, HeidiSQL, Apache NetBeans</p>
+            </article>
+
+            <article class="proyecto">
+              <header class="proyecto-head">
+                <h3>Sitio Web Clínica Veterinaria ConSentidos</h3>
+                <div class="proyecto-links">
+                  <a target="_blank" rel="noopener" href="https://github.com/Luis-G-Barragan">Código</a>
+                </div>
+              </header>
+              <p>
+                Desarrollo de sitio web multipágina estructurado con HTML5 semántico y estilos CSS3 personalizados aplicando criterios de usabilidad y arquitectura de información.
+              </p>
+              <p class="rol"><strong>Rol:</strong> Desarrollador Frontend</p>
+              <p class="tech"><strong>Tecnologías:</strong> HTML5, CSS3, Git, GitHub</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="experiencia card">
+          <h2>Experiencia</h2>
+          <ul class="timeline">
+            <li>
+              <div class="item">
+                <h3>Desarrollador en Formación — Proyectos Académicos UTP</h3>
+                <span class="meta">2025 – Presente</span>
+                <p>
+                  Implementación de aplicaciones de escritorio en Java, C# y C++, diseño de bases de datos relacionales en MariaDB/MySQL y desarrollo web con control de versiones en GitHub.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="educacion card">
+          <h2>Educación</h2>
+          <ul class="listado-simple">
+            <li>
+              <strong>Licenciatura en Desarrollo y Gestión de Software</strong>
+              — UTP, Centro Regional de Veraguas (2025–Presente)
+            </li>
+          </ul>
+        </section>
+
+        <section class="certificaciones card">
+          <h2>Certificaciones y Cursos</h2>
+          <ul class="listado-simple">
+            <li>Control de Versiones con Git y GitHub — Desarrollo de Software V (UTP)</li>
+            <li>Programación Orientada a Objetos y Bases de Datos Relacionales (UTP)</li>
+          </ul>
+        </section>
+
+        <section class="extra card">
+          <h2>Logros · Artículos · Intereses</h2>
+          <ul class="listado-simple">
+            <li>Interés en desarrollo web, diseño de interfaces limpias, ingeniería de software y bases de datos.</li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <small>
+          © 2026 Universidad Tecnológica de Panamá · Centro Regional de Veraguas
+          · Lic. en Desarrollo y Gestión de Software
+        </small>
+      </footer>
+    </div>
+  </body>
+</html>
